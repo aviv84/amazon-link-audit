@@ -1,0 +1,34 @@
+{
+  "name": "amazon-link-audit",
+  "version": "1.0.0",
+  "description": "Find Amazon affiliate links that open the wrong product variant. Catches the failure mode link checkers miss: the URL returns 200, the tag is correct, and the link is still wrong.",
+  "bin": {
+    "amazon-link-audit": "cli.js"
+  },
+  "main": "lib/classify.js",
+  "files": [
+    "cli.js",
+    "lib/",
+    "test/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "amazon",
+    "affiliate",
+    "amazon-associates",
+    "link-checker",
+    "asin",
+    "variant",
+    "audit",
+    "affiliate-marketing"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}

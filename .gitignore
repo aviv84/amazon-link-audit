@@ -1,0 +1,16 @@
+# Audit output. These contain your own page URLs and ASINs -- harmless, but
+# they are generated artefacts, not source.
+claims.json
+records.json
+report.json
+*.log
+
+# Never commit anything resembling credentials. This tool needs none: the
+# browser step uses the reader's own session and no key is ever read.
+.env
+.env.*
+
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
